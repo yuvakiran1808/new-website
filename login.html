@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My login form
+        </title>
+        <style>
+        
+            body{
+                padding: 0%;
+               font-style: italic;
+                background-size: cover;
+                background-color: black; 
+            }
+            .login-box
+            {
+                width: 100px;
+                position: absolute;
+                top: 40%;
+                left: 45%;
+                transform: translate(-50%,-50%);
+                
+            }
+           .login-box h1{
+               color: red;
+               float: left;
+               font-size: 40px;
+              border-bottom: 6px ridge;
+              margin-bottom: 30px;
+              
+           }
+           .textbox
+           {
+               width: 200%;
+               padding: 8px 0;
+               border-bottom: 1px solid white;
+               margin: 8px 0;
+              
+             overflow: hidden;      
+             font-size: 20px;
+           }
+          .textbox input{
+              border: none;
+              outline: none;
+              background: none;
+              color: white;
+              font-size: 20px;
+              float: left;
+              width: 200px;
+              
+          }
+          .btn
+          {
+              width: 100%;
+              background: none;
+              border: 1px solid WHITE;
+              font-size: 10px;
+              color: white; 
+              padding: 5px ;
+              margin-left: 35px;    
+              margin-top: 20px;
+                cursor: pointer;
+                border-radius: 10px;
+                font-size: 20px;
+          }
+        </style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+
+    <body>
+        <div class="login-box">
+            <h1>LOGIN</h1>
+            <span>
+                <div class="textbox">
+               
+               <input type="text" placeholder="username">
+            </div>
+        </span>
+            <div class="textbox">
+                <i class="fa fa-key" aria-hidden="true"></i>    
+                <input type="password" placeholder="password">
+                  </div>
+                  <input class="btn" type="button" value="sign In">
+        </div>
+    </body>
+</html>
