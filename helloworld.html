@@ -2,13 +2,77 @@
 <html>
     <head>
 <title>
-    signed in
+    Gprec.in
 </title>
+<link rel="stylesheet" href="style.css">
     </head>
     <body>
-    <h1>
-     Your login is succesfully saved.
-    </h1>    
+    <div class="topnav">
+         <a class="active" href="#home">HOME</a>
+         <a href="#gprec">About us</a>
+         <a href="#gprec">Admissions</a>
+         <a href="#gprec">Academics</a>
+         <a href="#gprec">Departments</a>
+         <a href="#gprec">Exam cell</a>
+         <a href="#gprec">Payments</a>
+         <a href="#gprec">NIRF</a>
+         <a href="#gprec">Training and Placements</a>
+         <span>Eamcet code : GPRE</span>
+         <br>
+         <span>ECET CODE : GPRE1</span>
+    </div>  
+    <div class="slideshow-container">
+        <div class="mySlides1">
+          <img src="image.jpg1.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides1">
+          <img src="image.jpg2 (2).png" style="width:100%">
+        </div>
+      
+        <div class="mySlides1">
+          <img src="image.jpg.png" style="width:100%">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      <br>
+      <b>WHAT IS IMPORTANCE OF COLLEGE:</b>
+      <i>G.Pulla Reddy Engineering College institute is approved by AICTE and affiliated to Jawaharlal Nehru Technological University 
+          Anantapur (JNTUA). The college offers various fields of Engineering at UG and PG levels. 
+          The college was ranked 190 in the Engineering College by NIRF in 2020. 
+          The admissions at the college are sought through counseling on the
+           basis of rank secured in the EAMCET entrance exam at UG level while on the 
+           basis of rank secured in GATE, PGECET at PG level. Training for placement is provided at
+            the college. In 2021, 800+ students were successfully placed at various companies at the campus recruitment drive. </i>
+      <script>
+        var slideIndex = [1,1];
+        var slideId = ["mySlides1", "mySlides2"]
+        showSlides(1, 0);
+        showSlides(1, 1);
         
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+        
+        function showSlides(n, no) {
+          var i;
+          var x = document.getElementsByClassName(slideId[no]);
+          if (n > x.length) {slideIndex[no] = 1}    
+          if (n < 1) {slideIndex[no] = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex[no]-1].style.display = "block";  
+        }
+        </script>
+  
+       
+   <div id="footer">
+       <p>Copyright © GPREC 2021. All Rights Reserved.</p>
+        
+
+   </div>
     </body>
 </html>
